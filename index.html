@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Surprise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="heart.gif" alt="Animated Heart" id="heart" onclick="showPuppyModal()">
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img src="puppy.gif" alt="Cute Puppy">
+            <p>I LOVE YOU <span class="dog-language">(in dog language)</span>!</p>
+            <button id="nextBtn" onclick="goToNext()">Next</button>
+        </div>
+    </div>
+
+    <!-- Will you be my valentine? -->
+    <div id="valentineMessage" style="display: none;">
+        <h2>Will you be my valentine now and forever?</h2>
+        <button onclick="yesClicked()">Yes</button>
+        <button onclick="noClicked()">No</button>
+        <p id="personalMessage" style="display: none;">Your personalized message here.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
